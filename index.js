@@ -3,16 +3,16 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Create a connection to the MySQL database
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password', // Replace with your MySQL password
-    database: 'voting_db'
+    host: 'bbya32tbhylfvjrwetog-mysql.services.clever-cloud.com',
+    user: 'uuw8tn1llklnipvx',
+    password: 'ukFEIs7B2cPtFE9XEt0T', // Replace with your MySQL password
+    database: 'bbya32tbhylfvjrwetog'
 });
 
 // Connect to the database
